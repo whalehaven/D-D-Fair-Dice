@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Dice View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="DiceViewController" customModule="D_D_Fair_Dice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JSn-KG-oDw">
+                                <rect key="frame" x="16" y="20" width="343" height="627"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="fmU-eO-lMi">
+                                        <rect key="frame" x="15" y="20" width="313" height="82"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is the roll, I can feel it!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gmF-mC-zh6">
+                                                <rect key="frame" x="43.5" y="0.0" width="226" height="24"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eN9-2N-nxO">
+                                                <rect key="frame" x="43" y="32" width="227" height="50"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="bvq-HF-pLc">
+                                        <rect key="frame" x="2" y="110" width="339" height="74"/>
+                                        <subviews>
+                                            <textField contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Roll from 1 to This Number" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="deY-ht-adv">
+                                                <rect key="frame" x="40" y="0.0" width="259" height="30"/>
+                                                <color key="backgroundColor" name="keyboardFocusIndicatorColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="numbersAndPunctuation" keyboardAppearance="alert" returnKeyType="done"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Mf-ef-AUv">
+                                                <rect key="frame" x="150.5" y="38" width="38" height="36"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <state key="normal" title="Roll!">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="rollDice:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gdv-kL-rlb"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="1Mf-ef-AUv" firstAttribute="top" secondItem="deY-ht-adv" secondAttribute="bottom" constant="8" id="BRM-0x-Fuo"/>
+                                            <constraint firstAttribute="trailing" secondItem="1Mf-ef-AUv" secondAttribute="trailing" constant="150" id="T5a-io-hBp"/>
+                                            <constraint firstItem="1Mf-ef-AUv" firstAttribute="leading" secondItem="bvq-HF-pLc" secondAttribute="leading" constant="150" id="dx6-IL-g3j"/>
+                                            <constraint firstItem="deY-ht-adv" firstAttribute="leading" secondItem="bvq-HF-pLc" secondAttribute="leading" constant="40" id="mWd-Eb-T3s"/>
+                                            <constraint firstAttribute="trailing" secondItem="deY-ht-adv" secondAttribute="trailing" constant="40" id="rSC-DX-dro"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="fmU-eO-lMi" firstAttribute="leading" secondItem="JSn-KG-oDw" secondAttribute="leading" constant="15" id="5se-MT-sBZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="bvq-HF-pLc" secondAttribute="trailing" constant="2" id="FLV-Op-p7H"/>
+                                    <constraint firstItem="bvq-HF-pLc" firstAttribute="leading" secondItem="JSn-KG-oDw" secondAttribute="leading" constant="2" id="GLQ-4o-4Bm"/>
+                                    <constraint firstAttribute="trailing" secondItem="fmU-eO-lMi" secondAttribute="trailing" constant="15" id="Vzg-dx-K5P"/>
+                                    <constraint firstItem="fmU-eO-lMi" firstAttribute="top" secondItem="JSn-KG-oDw" secondAttribute="top" constant="20" symbolic="YES" id="a1C-u9-MxV"/>
+                                    <constraint firstItem="bvq-HF-pLc" firstAttribute="top" secondItem="fmU-eO-lMi" secondAttribute="bottom" constant="8" symbolic="YES" id="vCn-Gk-sPa"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="JSn-KG-oDw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="6bO-eA-6n1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JSn-KG-oDw" secondAttribute="trailing" constant="16" id="8Od-Sb-h5k"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="JSn-KG-oDw" secondAttribute="bottom" constant="20" id="ERv-td-Cv6"/>
+                            <constraint firstItem="JSn-KG-oDw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="rv5-ge-lid"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="baseView" destination="JSn-KG-oDw" id="rL6-MK-Hq1"/>
+                        <outlet property="bottomStack" destination="bvq-HF-pLc" id="5Ca-qY-kBj"/>
+                        <outlet property="resultField" destination="eN9-2N-nxO" id="Sih-9c-Pnr"/>
+                        <outlet property="titleField" destination="gmF-mC-zh6" id="a82-HQ-ygN"/>
+                        <outlet property="upperBoundForRoll" destination="deY-ht-adv" id="Hm4-tF-BaX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="141.59999999999999" y="125.4872563718141"/>
+        </scene>
+    </scenes>
+</document>
