@@ -23,18 +23,18 @@
                                 <rect key="frame" x="16" y="20" width="343" height="627"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="fmU-eO-lMi">
-                                        <rect key="frame" x="15" y="20" width="313" height="82"/>
+                                        <rect key="frame" x="20" y="20" width="303" height="82"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is the roll, I can feel it!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gmF-mC-zh6">
-                                                <rect key="frame" x="43.5" y="0.0" width="226" height="24"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is the roll, I can feel it!" textAlignment="center" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gmF-mC-zh6">
+                                                <rect key="frame" x="38.5" y="0.0" width="226" height="24"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eN9-2N-nxO">
-                                                <rect key="frame" x="43" y="32" width="227" height="50"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
-                                                <nil key="textColor"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eN9-2N-nxO">
+                                                <rect key="frame" x="38" y="32" width="227" height="50"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -42,14 +42,14 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="bvq-HF-pLc">
                                         <rect key="frame" x="2" y="110" width="339" height="74"/>
                                         <subviews>
-                                            <textField contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Roll from 1 to This Number" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="deY-ht-adv">
+                                            <textField contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Roll from 1 to This Number" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="deY-ht-adv">
                                                 <rect key="frame" x="40" y="0.0" width="259" height="30"/>
                                                 <color key="backgroundColor" name="keyboardFocusIndicatorColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="numbersAndPunctuation" keyboardAppearance="alert" returnKeyType="done"/>
                                             </textField>
-                                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Mf-ef-AUv">
+                                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Mf-ef-AUv">
                                                 <rect key="frame" x="150.5" y="38" width="38" height="36"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <state key="normal" title="Roll!">
@@ -71,11 +71,11 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="fmU-eO-lMi" firstAttribute="leading" secondItem="JSn-KG-oDw" secondAttribute="leading" constant="15" id="5se-MT-sBZ"/>
                                     <constraint firstAttribute="trailing" secondItem="bvq-HF-pLc" secondAttribute="trailing" constant="2" id="FLV-Op-p7H"/>
                                     <constraint firstItem="bvq-HF-pLc" firstAttribute="leading" secondItem="JSn-KG-oDw" secondAttribute="leading" constant="2" id="GLQ-4o-4Bm"/>
-                                    <constraint firstAttribute="trailing" secondItem="fmU-eO-lMi" secondAttribute="trailing" constant="15" id="Vzg-dx-K5P"/>
                                     <constraint firstItem="fmU-eO-lMi" firstAttribute="top" secondItem="JSn-KG-oDw" secondAttribute="top" constant="20" symbolic="YES" id="a1C-u9-MxV"/>
+                                    <constraint firstAttribute="trailing" secondItem="fmU-eO-lMi" secondAttribute="trailing" constant="20" symbolic="YES" id="ghF-Lb-Kky"/>
+                                    <constraint firstItem="fmU-eO-lMi" firstAttribute="leading" secondItem="JSn-KG-oDw" secondAttribute="leading" constant="20" symbolic="YES" id="qCC-s3-zM2"/>
                                     <constraint firstItem="bvq-HF-pLc" firstAttribute="top" secondItem="fmU-eO-lMi" secondAttribute="bottom" constant="8" symbolic="YES" id="vCn-Gk-sPa"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
