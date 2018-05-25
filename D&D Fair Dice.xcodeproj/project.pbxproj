@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		303628D520B70D3F00CC5DAA /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303628D420B70D3F00CC5DAA /* SettingsTableViewCell.swift */; };
+		303628D720B711BD00CC5DAA /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303628D620B711BD00CC5DAA /* SettingsTableViewController.swift */; };
+		303628D920B712B100CC5DAA /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303628D820B712B100CC5DAA /* Color.swift */; };
 		30D7718820A0C98E006A6820 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D7718720A0C98E006A6820 /* AppDelegate.swift */; };
 		30D7718A20A0C98E006A6820 /* DiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D7718920A0C98E006A6820 /* DiceViewController.swift */; };
 		30D7718D20A0C98E006A6820 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30D7718B20A0C98E006A6820 /* Main.storyboard */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		303628D420B70D3F00CC5DAA /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
+		303628D620B711BD00CC5DAA /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		303628D820B712B100CC5DAA /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		30D7718420A0C98E006A6820 /* D&D Fair Dice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "D&D Fair Dice.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		30D7718720A0C98E006A6820 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		30D7718920A0C98E006A6820 /* DiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +65,9 @@
 				30D7718920A0C98E006A6820 /* DiceViewController.swift */,
 				30D7719A20A0CFEB006A6820 /* LogicalDie.swift */,
 				30D7718B20A0C98E006A6820 /* Main.storyboard */,
+				303628D620B711BD00CC5DAA /* SettingsTableViewController.swift */,
+				303628D820B712B100CC5DAA /* Color.swift */,
+				303628D420B70D3F00CC5DAA /* SettingsTableViewCell.swift */,
 				30D7719320A0C98F006A6820 /* Info.plist */,
 				30D7719920A0C9E4006A6820 /* Supporting Files */,
 			);
@@ -147,8 +156,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				30D7719B20A0CFEB006A6820 /* LogicalDie.swift in Sources */,
+				303628D720B711BD00CC5DAA /* SettingsTableViewController.swift in Sources */,
 				30D7718A20A0C98E006A6820 /* DiceViewController.swift in Sources */,
+				303628D520B70D3F00CC5DAA /* SettingsTableViewCell.swift in Sources */,
 				30D7718820A0C98E006A6820 /* AppDelegate.swift in Sources */,
+				303628D920B712B100CC5DAA /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

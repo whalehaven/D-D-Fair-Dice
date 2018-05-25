@@ -12,9 +12,6 @@ class DiceViewController: UIViewController, UITextFieldDelegate
 {
     
     
-    //MARK: outlet connections from launch storyboard
-    
-    
     //MARK: outlet connections from main storyboard
     @IBOutlet weak var baseView: UIView!
     @IBOutlet weak var titleField: UILabel!
@@ -36,7 +33,7 @@ class DiceViewController: UIViewController, UITextFieldDelegate
         super.viewDidLoad()
         self.upperBoundForRoll.delegate = self
         self.view.backgroundColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
-        baseView.backgroundColor = #colorLiteral(red: 0.2196078449, green: 0.007843137719, blue: 0.8549019694, alpha: 1)
+        setInitialBackgroundColorForBaseview()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -45,7 +42,7 @@ class DiceViewController: UIViewController, UITextFieldDelegate
     
     
     
-    //MARK: rollDice function performs random number generator operation on number specified in resultField
+    //rollDice function performs random number generator operation on number specified in resultField
     @IBAction func rollDice(_ sender: UIButton)
     {
         if let textFromField = upperBoundForRoll.text
@@ -61,12 +58,37 @@ class DiceViewController: UIViewController, UITextFieldDelegate
         
     }
     
+    //MARK: functions
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         self.view.endEditing(true)
         return true
     }
     
+    func setInitialBackgroundColorForBaseview()
+    {
+        baseView.backgroundColor = #colorLiteral(red: 0.2196078449, green: 0.007843137719, blue: 0.8549019694, alpha: 1)
+    }
+    
+    @IBAction func unwindToDiceViewController(sender: UIStoryboardSegue)
+    {
+        if let sourceViewController = sender.source as? SettingsTableViewController
+        {
+            baseView.backgroundColor = sourceViewController.currentColorChoice
+            
+        }
+    }
+    
 
 
 }
+
+
+
+
+
+
+
+
+
+
