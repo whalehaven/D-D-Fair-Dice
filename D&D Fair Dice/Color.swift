@@ -11,6 +11,7 @@ import UIKit
 
 struct Color {
     
+    //MARK: Properties of Color struct
     internal var myColor: UIColor
     internal var colorName: String
     

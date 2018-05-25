@@ -14,12 +14,12 @@ class SettingsTableViewCell: UITableViewCell {
     @IBOutlet weak var settingsLabel: UILabel!
     @IBOutlet weak var settingsColor: UIImageView!
     
-
+/*
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
     }
-
+*/
 }
 
