@@ -1,14 +1,14 @@
 //
-//  LogicalDie.swift
-//  D&D Fair Dice
+//  LogicalDieForWatch.swift
+//  Fair Dice For Apple Watch Extension
 //
-//  Created by Wills Blake on 5/7/18.
+//  Created by Wills Blake on 5/27/18.
 //  Copyright © 2018 Trap Card. All rights reserved.
 //
 
 import Foundation
 
-class LogicalDie
+class LogicalDieForWatch
 {
     
     //member variables
@@ -37,17 +37,7 @@ class LogicalDie
         self.currentNumber = number
     }
     
-    public func getCurrentNumber() -> Int?
-    {
-        return currentNumber
-    }
     
-    public func getTopNumber() -> Int?
-    {
-        return topNumber
-    }
-    
-
 }
 
 extension Int

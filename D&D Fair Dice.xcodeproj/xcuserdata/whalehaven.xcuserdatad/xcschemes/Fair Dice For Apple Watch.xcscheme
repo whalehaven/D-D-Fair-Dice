@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   LastUpgradeVersion = "0930"
+   version = "1.3">
+   <BuildAction
+      parallelizeBuildables = "YES"
+      buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "3031441420BA2BE800ABBFB3"
+               BuildableName = "Fair Dice For Apple Watch.app"
+               BlueprintName = "Fair Dice For Apple Watch"
+               ReferencedContainer = "container:D&amp;D Fair Dice.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "30D7718320A0C98E006A6820"
+               BuildableName = "D&amp;D Fair Dice.app"
+               BlueprintName = "D&amp;D Fair Dice"
+               ReferencedContainer = "container:D&amp;D Fair Dice.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <TestAction
+      buildConfiguration = "Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      shouldUseLaunchSchemeArgsEnv = "YES">
+      <Testables>
+      </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "3031441420BA2BE800ABBFB3"
+            BuildableName = "Fair Dice For Apple Watch.app"
+            BlueprintName = "Fair Dice For Apple Watch"
+            ReferencedContainer = "container:D&amp;D Fair Dice.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
+      <AdditionalOptions>
+      </AdditionalOptions>
+   </TestAction>
+   <LaunchAction
+      buildConfiguration = "Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      launchStyle = "0"
+      useCustomWorkingDirectory = "NO"
+      ignoresPersistentStateOnLaunch = "NO"
+      debugDocumentVersioning = "YES"
+      debugServiceExtension = "internal"
+      allowLocationSimulation = "YES"
+      notificationPayloadFile = "Fair Dice For Apple Watch Extension/Supporting Files/PushNotificationPayload.apns">
+      <RemoteRunnable
+         runnableDebuggingMode = "2"
+         BundleIdentifier = "com.apple.Carousel"
+         RemotePath = "/$(PRODUCT_BUNDLE_IDENTIFIER)">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "3031441420BA2BE800ABBFB3"
+            BuildableName = "Fair Dice For Apple Watch.app"
+            BlueprintName = "Fair Dice For Apple Watch"
+            ReferencedContainer = "container:D&amp;D Fair Dice.xcodeproj">
+         </BuildableReference>
+      </RemoteRunnable>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "3031441420BA2BE800ABBFB3"
+            BuildableName = "Fair Dice For Apple Watch.app"
+            BlueprintName = "Fair Dice For Apple Watch"
+            ReferencedContainer = "container:D&amp;D Fair Dice.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
+      <AdditionalOptions>
+      </AdditionalOptions>
+   </LaunchAction>
+   <ProfileAction
+      buildConfiguration = "Release"
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      savedToolIdentifier = ""
+      useCustomWorkingDirectory = "NO"
+      debugDocumentVersioning = "YES">
+      <RemoteRunnable
+         runnableDebuggingMode = "2"
+         BundleIdentifier = "com.apple.Carousel"
+         RemotePath = "/$(PRODUCT_BUNDLE_IDENTIFIER)">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "3031441420BA2BE800ABBFB3"
+            BuildableName = "Fair Dice For Apple Watch.app"
+            BlueprintName = "Fair Dice For Apple Watch"
+            ReferencedContainer = "container:D&amp;D Fair Dice.xcodeproj">
+         </BuildableReference>
+      </RemoteRunnable>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "3031441420BA2BE800ABBFB3"
+            BuildableName = "Fair Dice For Apple Watch.app"
+            BlueprintName = "Fair Dice For Apple Watch"
+            ReferencedContainer = "container:D&amp;D Fair Dice.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
+   </ProfileAction>
+   <AnalyzeAction
+      buildConfiguration = "Debug">
+   </AnalyzeAction>
+   <ArchiveAction
+      buildConfiguration = "Release"
+      revealArchiveInOrganizer = "YES">
+   </ArchiveAction>
+</Scheme>

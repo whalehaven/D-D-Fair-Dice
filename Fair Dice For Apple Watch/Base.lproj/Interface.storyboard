@@ -20,19 +20,26 @@
                         <group alignment="left" layout="vertical" spacing="20" id="8qN-02-Gol">
                             <items>
                                 <label alignment="center" text="Previous: " id="Ehv-zz-6ZO">
-                                    <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                                    <fontDescription key="font" style="UICTFontTextStyleCaption1"/>
                                 </label>
-                                <label alignment="center" verticalAlignment="bottom" text="Current: " id="31H-kc-HqX">
+                                <label alignment="left" verticalAlignment="bottom" text="Current: " id="31H-kc-HqX">
                                     <fontDescription key="font" style="UICTFontTextStyleCaption1"/>
                                 </label>
                             </items>
                         </group>
                         <group width="1" alignment="center" verticalAlignment="bottom" layout="vertical" id="37D-yQ-an9">
                             <items>
-                                <picker width="1" height="35" alignment="center" verticalAlignment="bottom" id="Qsd-Zs-pR2"/>
+                                <picker height="40" alignment="center" verticalAlignment="bottom" id="dqs-vC-dYx">
+                                    <connections>
+                                        <action selector="getValueFromPickerWithIndex:" destination="AgC-eL-Hgc" id="cfm-4j-HLb"/>
+                                    </connections>
+                                </picker>
                                 <button width="1" height="50" alignment="center" verticalAlignment="bottom" title="Roll!" id="PSK-UJ-8RX">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                                    <connections>
+                                        <action selector="rollNumber" destination="AgC-eL-Hgc" id="eQ5-na-i3r"/>
+                                    </connections>
                                 </button>
                             </items>
                         </group>
@@ -40,7 +47,7 @@
                     <connections>
                         <outlet property="currentRollLabel" destination="31H-kc-HqX" id="0We-K1-DhJ"/>
                         <outlet property="labelGroup" destination="8qN-02-Gol" id="FTr-9Q-GHU"/>
-                        <outlet property="numberPicker" destination="Qsd-Zs-pR2" id="SJF-Rz-j2c"/>
+                        <outlet property="numberPicker" destination="dqs-vC-dYx" id="1fR-6Z-8E9"/>
                         <outlet property="previousRollLabel" destination="Ehv-zz-6ZO" id="kCc-ij-1M7"/>
                         <outlet property="userInterfaceGroup" destination="37D-yQ-an9" id="mZa-FI-9cs"/>
                     </connections>

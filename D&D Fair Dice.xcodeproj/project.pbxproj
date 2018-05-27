@@ -25,6 +25,7 @@
 		30D7718F20A0C98F006A6820 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30D7718E20A0C98F006A6820 /* Assets.xcassets */; };
 		30D7719220A0C98F006A6820 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30D7719020A0C98F006A6820 /* LaunchScreen.storyboard */; };
 		30D7719B20A0CFEB006A6820 /* LogicalDie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D7719A20A0CFEB006A6820 /* LogicalDie.swift */; };
+		30EA70D020BA77DA002C8756 /* LogicalDie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EA70CF20BA77DA002C8756 /* LogicalDie.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +94,7 @@
 		30D7719120A0C98F006A6820 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		30D7719320A0C98F006A6820 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30D7719A20A0CFEB006A6820 /* LogicalDie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogicalDie.swift; sourceTree = "<group>"; };
+		30EA70CF20BA77DA002C8756 /* LogicalDie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LogicalDie.swift; path = "D&D Fair Dice/LogicalDie.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +145,7 @@
 		3031442520BA2BE800ABBFB3 /* Fair Dice For Apple Watch Extension */ = {
 			isa = PBXGroup;
 			children = (
+				30EA70CF20BA77DA002C8756 /* LogicalDie.swift */,
 				3031442620BA2BE800ABBFB3 /* DiceInterfaceController.swift */,
 				3031442820BA2BE800ABBFB3 /* ExtensionDelegate.swift */,
 				3031442A20BA2BE800ABBFB3 /* NotificationController.swift */,
@@ -333,6 +336,7 @@
 				3031442B20BA2BE800ABBFB3 /* NotificationController.swift in Sources */,
 				3031442D20BA2BE800ABBFB3 /* ComplicationController.swift in Sources */,
 				3031442920BA2BE800ABBFB3 /* ExtensionDelegate.swift in Sources */,
+				30EA70D020BA77DA002C8756 /* LogicalDie.swift in Sources */,
 				3031442720BA2BE800ABBFB3 /* DiceInterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

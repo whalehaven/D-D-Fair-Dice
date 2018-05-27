@@ -20,27 +20,93 @@ class DiceInterfaceController: WKInterfaceController {
     // MARK: UI outlet connections
     @IBOutlet var numberPicker: WKInterfacePicker!
     
+    
     // MARK: Label outlet connections
     @IBOutlet var currentRollLabel: WKInterfaceLabel!
     @IBOutlet var previousRollLabel: WKInterfaceLabel!
     
+    // instantiating logical die and var to store previous and current roll
+    var die = LogicalDie()
+    var previousRoll = Int()
+    var currentRoll = Int()
     
+    // MARK: Actions
+    @IBAction func getValueFromPicker(index: Int)
+    {
+        die.setTopNumber(withNumber: (index + 1))
+    }
     
+    @IBAction func rollNumber() {
+        updatePreviousNumberLabel()
+        let rolledNumber = die.roll()
+        die.setCurrentNumber(withNumber: rolledNumber)
+        currentRoll = rolledNumber
+        updateCurrentNumberLabel()
+        
+    }
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
-        // Configure interface objects here.
     }
     
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
+        loadPickerValues()
     }
     
     override func didDeactivate() {
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()
     }
+    
+    private func setCurrentRollLabel(withText text: String)
+    {
+        currentRollLabel.setText("Current: " + text)
+    }
+    
+    private func setPreviousRollLabel(withText text: String)
+    {
+        previousRollLabel.setText("Previous: " + text)
+    }
+    
+    func loadPickerValues()
+    {
+        var pickerItems = [WKPickerItem]()
+        for number in 1...50
+        {
+            let item = WKPickerItem()
+            item.title = String(number)
+            pickerItems += [item]
+        }
+        numberPicker.setItems(pickerItems)
+        
+    }
+    
+    func updatePreviousNumberLabel()
+    {
+        setPreviousRollLabel(withText: String(currentRoll))
+    }
+    
+    func updateCurrentNumberLabel()
+    {
+        setCurrentRollLabel(withText: String(currentRoll))
+    }
+    
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
