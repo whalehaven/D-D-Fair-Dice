@@ -10,8 +10,23 @@ import WatchKit
 import Foundation
 
 
-class InterfaceController: WKInterfaceController {
-
+class DiceInterfaceController: WKInterfaceController {
+    
+    
+    // MARK: Group interface connection setup
+    @IBOutlet var userInterfaceGroup: WKInterfaceGroup!
+    @IBOutlet var labelGroup: WKInterfaceGroup!
+    
+    // MARK: UI outlet connections
+    @IBOutlet var numberPicker: WKInterfacePicker!
+    
+    // MARK: Label outlet connections
+    @IBOutlet var currentRollLabel: WKInterfaceLabel!
+    @IBOutlet var previousRollLabel: WKInterfaceLabel!
+    
+    
+    
+    
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
