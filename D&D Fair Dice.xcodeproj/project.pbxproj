@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3031441920BA2BE800ABBFB3 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3031441720BA2BE800ABBFB3 /* Interface.storyboard */; };
+		3031441B20BA2BE800ABBFB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3031441A20BA2BE800ABBFB3 /* Assets.xcassets */; };
+		3031442220BA2BE800ABBFB3 /* Fair Dice For Apple Watch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3031442120BA2BE800ABBFB3 /* Fair Dice For Apple Watch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3031442720BA2BE800ABBFB3 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3031442620BA2BE800ABBFB3 /* InterfaceController.swift */; };
+		3031442920BA2BE800ABBFB3 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3031442820BA2BE800ABBFB3 /* ExtensionDelegate.swift */; };
+		3031442B20BA2BE800ABBFB3 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3031442A20BA2BE800ABBFB3 /* NotificationController.swift */; };
+		3031442D20BA2BE800ABBFB3 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3031442C20BA2BE800ABBFB3 /* ComplicationController.swift */; };
+		3031442F20BA2BE900ABBFB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3031442E20BA2BE900ABBFB3 /* Assets.xcassets */; };
+		3031443420BA2BE900ABBFB3 /* Fair Dice For Apple Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 3031441520BA2BE800ABBFB3 /* Fair Dice For Apple Watch.app */; };
 		303628D520B70D3F00CC5DAA /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303628D420B70D3F00CC5DAA /* SettingsTableViewCell.swift */; };
 		303628D720B711BD00CC5DAA /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303628D620B711BD00CC5DAA /* SettingsTableViewController.swift */; };
 		303628D920B712B100CC5DAA /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303628D820B712B100CC5DAA /* Color.swift */; };
@@ -18,7 +27,61 @@
 		30D7719B20A0CFEB006A6820 /* LogicalDie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D7719A20A0CFEB006A6820 /* LogicalDie.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		3031442320BA2BE800ABBFB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30D7717C20A0C98E006A6820 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3031442020BA2BE800ABBFB3;
+			remoteInfo = "Fair Dice For Apple Watch Extension";
+		};
+		3031443220BA2BE900ABBFB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30D7717C20A0C98E006A6820 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3031441420BA2BE800ABBFB3;
+			remoteInfo = "Fair Dice For Apple Watch";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3031443A20BA2BE900ABBFB3 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				3031442220BA2BE800ABBFB3 /* Fair Dice For Apple Watch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3031443C20BA2BE900ABBFB3 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				3031443420BA2BE900ABBFB3 /* Fair Dice For Apple Watch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		3031441520BA2BE800ABBFB3 /* Fair Dice For Apple Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fair Dice For Apple Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3031441820BA2BE800ABBFB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		3031441A20BA2BE800ABBFB3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3031441C20BA2BE800ABBFB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3031442120BA2BE800ABBFB3 /* Fair Dice For Apple Watch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Fair Dice For Apple Watch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3031442620BA2BE800ABBFB3 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		3031442820BA2BE800ABBFB3 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		3031442A20BA2BE800ABBFB3 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		3031442C20BA2BE800ABBFB3 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		3031442E20BA2BE900ABBFB3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3031443020BA2BE900ABBFB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3031443120BA2BE900ABBFB3 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		303628D420B70D3F00CC5DAA /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
 		303628D620B711BD00CC5DAA /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		303628D820B712B100CC5DAA /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
@@ -33,6 +96,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		3031441E20BA2BE800ABBFB3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		30D7718120A0C98E006A6820 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -43,10 +113,52 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		302A085320BA4F13008D0FE7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3031441A20BA2BE800ABBFB3 /* Assets.xcassets */,
+				3031441C20BA2BE800ABBFB3 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		302A085420BA4F47008D0FE7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3031442E20BA2BE900ABBFB3 /* Assets.xcassets */,
+				3031443020BA2BE900ABBFB3 /* Info.plist */,
+				3031443120BA2BE900ABBFB3 /* PushNotificationPayload.apns */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3031441620BA2BE800ABBFB3 /* Fair Dice For Apple Watch */ = {
+			isa = PBXGroup;
+			children = (
+				3031441720BA2BE800ABBFB3 /* Interface.storyboard */,
+				302A085320BA4F13008D0FE7 /* Supporting Files */,
+			);
+			path = "Fair Dice For Apple Watch";
+			sourceTree = "<group>";
+		};
+		3031442520BA2BE800ABBFB3 /* Fair Dice For Apple Watch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				3031442620BA2BE800ABBFB3 /* InterfaceController.swift */,
+				3031442820BA2BE800ABBFB3 /* ExtensionDelegate.swift */,
+				3031442A20BA2BE800ABBFB3 /* NotificationController.swift */,
+				3031442C20BA2BE800ABBFB3 /* ComplicationController.swift */,
+				302A085420BA4F47008D0FE7 /* Supporting Files */,
+			);
+			path = "Fair Dice For Apple Watch Extension";
+			sourceTree = "<group>";
+		};
 		30D7717B20A0C98E006A6820 = {
 			isa = PBXGroup;
 			children = (
 				30D7718620A0C98E006A6820 /* D&D Fair Dice */,
+				3031441620BA2BE800ABBFB3 /* Fair Dice For Apple Watch */,
+				3031442520BA2BE800ABBFB3 /* Fair Dice For Apple Watch Extension */,
 				30D7718520A0C98E006A6820 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,6 +167,8 @@
 			isa = PBXGroup;
 			children = (
 				30D7718420A0C98E006A6820 /* D&D Fair Dice.app */,
+				3031441520BA2BE800ABBFB3 /* Fair Dice For Apple Watch.app */,
+				3031442120BA2BE800ABBFB3 /* Fair Dice For Apple Watch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -87,6 +201,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		3031441420BA2BE800ABBFB3 /* Fair Dice For Apple Watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3031443B20BA2BE900ABBFB3 /* Build configuration list for PBXNativeTarget "Fair Dice For Apple Watch" */;
+			buildPhases = (
+				3031441320BA2BE800ABBFB3 /* Resources */,
+				3031443A20BA2BE900ABBFB3 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3031442420BA2BE800ABBFB3 /* PBXTargetDependency */,
+			);
+			name = "Fair Dice For Apple Watch";
+			productName = "Fair Dice For Apple Watch";
+			productReference = 3031441520BA2BE800ABBFB3 /* Fair Dice For Apple Watch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		3031442020BA2BE800ABBFB3 /* Fair Dice For Apple Watch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3031443920BA2BE900ABBFB3 /* Build configuration list for PBXNativeTarget "Fair Dice For Apple Watch Extension" */;
+			buildPhases = (
+				3031441D20BA2BE800ABBFB3 /* Sources */,
+				3031441E20BA2BE800ABBFB3 /* Frameworks */,
+				3031441F20BA2BE800ABBFB3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Fair Dice For Apple Watch Extension";
+			productName = "Fair Dice For Apple Watch Extension";
+			productReference = 3031442120BA2BE800ABBFB3 /* Fair Dice For Apple Watch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 		30D7718320A0C98E006A6820 /* D&D Fair Dice */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 30D7719620A0C98F006A6820 /* Build configuration list for PBXNativeTarget "D&D Fair Dice" */;
@@ -94,10 +242,12 @@
 				30D7718020A0C98E006A6820 /* Sources */,
 				30D7718120A0C98E006A6820 /* Frameworks */,
 				30D7718220A0C98E006A6820 /* Resources */,
+				3031443C20BA2BE900ABBFB3 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				3031443320BA2BE900ABBFB3 /* PBXTargetDependency */,
 			);
 			name = "D&D Fair Dice";
 			productName = "D&D Fair Dice";
@@ -114,6 +264,12 @@
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Trap Card";
 				TargetAttributes = {
+					3031441420BA2BE800ABBFB3 = {
+						CreatedOnToolsVersion = 9.3.1;
+					};
+					3031442020BA2BE800ABBFB3 = {
+						CreatedOnToolsVersion = 9.3.1;
+					};
 					30D7718320A0C98E006A6820 = {
 						CreatedOnToolsVersion = 9.3;
 					};
@@ -133,11 +289,30 @@
 			projectRoot = "";
 			targets = (
 				30D7718320A0C98E006A6820 /* D&D Fair Dice */,
+				3031441420BA2BE800ABBFB3 /* Fair Dice For Apple Watch */,
+				3031442020BA2BE800ABBFB3 /* Fair Dice For Apple Watch Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		3031441320BA2BE800ABBFB3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3031441B20BA2BE800ABBFB3 /* Assets.xcassets in Resources */,
+				3031441920BA2BE800ABBFB3 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3031441F20BA2BE800ABBFB3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3031442F20BA2BE900ABBFB3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		30D7718220A0C98E006A6820 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -151,6 +326,17 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		3031441D20BA2BE800ABBFB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3031442B20BA2BE800ABBFB3 /* NotificationController.swift in Sources */,
+				3031442D20BA2BE800ABBFB3 /* ComplicationController.swift in Sources */,
+				3031442920BA2BE800ABBFB3 /* ExtensionDelegate.swift in Sources */,
+				3031442720BA2BE800ABBFB3 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		30D7718020A0C98E006A6820 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -166,7 +352,28 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		3031442420BA2BE800ABBFB3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3031442020BA2BE800ABBFB3 /* Fair Dice For Apple Watch Extension */;
+			targetProxy = 3031442320BA2BE800ABBFB3 /* PBXContainerItemProxy */;
+		};
+		3031443320BA2BE900ABBFB3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3031441420BA2BE800ABBFB3 /* Fair Dice For Apple Watch */;
+			targetProxy = 3031443220BA2BE900ABBFB3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
+		3031441720BA2BE800ABBFB3 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3031441820BA2BE800ABBFB3 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
 		30D7718B20A0C98E006A6820 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -186,6 +393,88 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		3031443520BA2BE900ABBFB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 64YNV2N55F;
+				IBSC_MODULE = Fair_Dice_For_Apple_Watch_Extension;
+				INFOPLIST_FILE = "Fair Dice For Apple Watch/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "TrapCard.1995.19.07.D-D-Fair-Dice.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Debug;
+		};
+		3031443620BA2BE900ABBFB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 64YNV2N55F;
+				IBSC_MODULE = Fair_Dice_For_Apple_Watch_Extension;
+				INFOPLIST_FILE = "Fair Dice For Apple Watch/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "TrapCard.1995.19.07.D-D-Fair-Dice.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Release;
+		};
+		3031443720BA2BE900ABBFB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 64YNV2N55F;
+				INFOPLIST_FILE = "Fair Dice For Apple Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "TrapCard.1995.19.07.D-D-Fair-Dice.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Debug;
+		};
+		3031443820BA2BE900ABBFB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 64YNV2N55F;
+				INFOPLIST_FILE = "Fair Dice For Apple Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "TrapCard.1995.19.07.D-D-Fair-Dice.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Release;
+		};
 		30D7719420A0C98F006A6820 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -339,6 +628,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		3031443920BA2BE900ABBFB3 /* Build configuration list for PBXNativeTarget "Fair Dice For Apple Watch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3031443720BA2BE900ABBFB3 /* Debug */,
+				3031443820BA2BE900ABBFB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3031443B20BA2BE900ABBFB3 /* Build configuration list for PBXNativeTarget "Fair Dice For Apple Watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3031443520BA2BE900ABBFB3 /* Debug */,
+				3031443620BA2BE900ABBFB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		30D7717F20A0C98E006A6820 /* Build configuration list for PBXProject "D&D Fair Dice" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
