@@ -30,8 +30,8 @@ class DiceInterfaceController: WKInterfaceController {
     
     // instantiating logical die and var to store previous and current roll
     var die = LogicalDie()
-    var previousRoll = Int()
-    var currentRoll = Int()
+    var previousRoll: Int?
+    var currentRoll: Int?
     
     // MARK: Actions
     @IBAction func getValueFromPicker(index: Int)
@@ -50,13 +50,14 @@ class DiceInterfaceController: WKInterfaceController {
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
-        
     }
     
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
         loadPickerValues()
+        currentRoll = nil
+        previousRoll = nil
     }
     
     override func didDeactivate() {
@@ -89,12 +90,18 @@ class DiceInterfaceController: WKInterfaceController {
     
     func updatePreviousNumberLabel()
     {
-        setPreviousRollLabel(withText: String(currentRoll))
+        if let roll = currentRoll
+        {
+        setPreviousRollLabel(withText: String(roll))
+        }
     }
     
     func updateCurrentNumberLabel()
     {
-        setCurrentRollLabel(withText: String(currentRoll))
+        if let roll = currentRoll
+        {
+        setCurrentRollLabel(withText: String(roll))
+        }
     }
     
 

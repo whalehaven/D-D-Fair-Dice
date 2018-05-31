@@ -28,6 +28,6 @@
 	<key>WKWatchKitApp</key>
 	<true/>
 	<key>CFBundleDisplayName</key>
-	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<string>Fair Dice For Apple Watch</string>
 </dict>
 </plist>
