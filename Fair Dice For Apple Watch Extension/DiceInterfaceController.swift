@@ -17,6 +17,9 @@ class DiceInterfaceController: WKInterfaceController {
     @IBOutlet var userInterfaceGroup: WKInterfaceGroup!
     @IBOutlet var labelGroup: WKInterfaceGroup!
     
+    // MARK: Delegate
+    private var delegate = ExtensionDelegate()
+    
     // MARK: UI outlet connections
     @IBOutlet var numberPicker: WKInterfacePicker!
     
