@@ -21,6 +21,9 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="190" placeholderIntrinsicHeight="178" image="LaunchImage" translatesAutoresizingMaskIntoConstraints="NO" id="Plo-ua-Roq">
                                 <rect key="frame" x="112" y="267" width="190" height="190"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" image="YES" updatesFrequently="YES"/>
+                                </accessibility>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Plo-ua-Roq" secondAttribute="height" multiplier="1:1" id="krh-Bw-dIr"/>
                                 </constraints>
